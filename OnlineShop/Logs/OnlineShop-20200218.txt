@@ -1,0 +1,38 @@
+2020-02-18T22:14:12.7720865+07:00  [INF] Now listening on: "https://localhost:5001" (d826f4b8)
+2020-02-18T22:14:12.7834850+07:00  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2020-02-18T22:14:12.7863629+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-02-18T22:14:12.7897589+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-02-18T22:14:12.7922900+07:00  [INF] Content root path: "D:\OnlineShop\OnlineShop\OnlineShop" (b5d60022)
+2020-02-18T22:18:07.2509727+07:00  [INF] Now listening on: "https://localhost:5001" (d826f4b8)
+2020-02-18T22:18:07.2690691+07:00  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2020-02-18T22:18:07.2785980+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-02-18T22:18:07.3195365+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-02-18T22:18:07.3219526+07:00  [INF] Content root path: "D:\OnlineShop\OnlineShop\OnlineShop" (b5d60022)
+2020-02-18T22:18:14.7068044+07:00 0HLTKGN0VKVU4:00000005 [ERR] The view '"Catalog"' was not found. Searched locations: ["/Views/Product/Catalog.cshtml", "/Views/Shared/Catalog.cshtml", "/Pages/Shared/Catalog.cshtml"] (9bb2756c)
+2020-02-18T22:18:14.8801879+07:00 0HLTKGN0VKVU4:00000005 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.InvalidOperationException: The view 'Catalog' was not found. The following locations were searched:
+/Views/Product/Catalog.cshtml
+/Views/Shared/Catalog.cshtml
+/Pages/Shared/Catalog.cshtml
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-02-18T23:27:50.2007827+07:00  [INF] Application is shutting down... (90f52c38)

@@ -1,0 +1,115 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="col-md-12 col-sm-12 col-xs-12">
+    <div class="x_panel">
+        <div class="x_title">
+            <h2>Products</h2>
+            <div class="title_right">
+                <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right">
+                    <div class="input-group" style="width:100%">
+                        <input type="text" style="width:100%" id="txtKeyword" class="form-control" placeholder="Search for...">
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12  form-group pull-right">
+                    <select class="form-control" id="ddlCategorySearch">
+                        <option>--Select category--</option>
+                    </select>
+                </div>
+                <div class="col-md-2 col-sm-12  form-group pull-right">
+                    <button id="btnCreate" class="btn btn-success">Create</button>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="x_content">
+
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Category</th>
+                        <th>Price</th>
+                        <th>Image</th>
+                        <th>Created Date</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="tbl-content">
+                </tbody>
+            </table>
+            <div class="row">
+                <div class="col-sm-5">
+                    <div class="dataTables_info" id="datatable-checkbox_info" role="status" aria-live="polite">
+                        <select id="ddlShowPage">
+                            <option value="10" selected="selected">10</option>
+                            <option value="20">20</option>
+                            <option value="30">30</option>
+                            <option value="50">50</option>
+                        </select>
+                        <span class="item-per-page">
+                            bản ghi/trang.
+                        </span>
+                        Tổng số bản ghi: <strong id="lblTotalRecords"></strong>
+                    </div>
+                </div><div class="col-sm-7">
+                    <div class="dataTables_paginate paging_simple_numbers" id="datatable-checkbox_paginate">
+                        <ul id="paginationUL"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@section styles
+{
+    <link href="~/lib/jquery-easyui/themes/bootstrap/easyui.css" rel="stylesheet" />
+    <link href="~/lib/jquery-easyui/themes/icon.css" rel="stylesheet" />
+}
+@section scripts
+{
+    <script src="~/lib/jquery-easyui/jquery.easyui.min.js"></script>
+    <script src="~/app/controller/product/index.js"></script>
+    <script>
+        ClassicEditor
+            .create(document.querySelector('#txtContentM'), {
+              
+                language: 'en',
+            })
+            .then(editor => {
+                window.editor = editor
+            })
+            .catch(error => {
+                console.error(error);
+            });
+        //      ClassicEditor.create( document.querySelector( '#txtDescM' ) )
+        //          .then(editor => {
+        //          language: 'en',
+        //	window.editor = editor
+        //} )
+        //.catch( err => {
+        //	console.error( err.stack );
+        //} );
+    </script>
+    <script>
+        var productController = new productController();
+        productController.Initialize();
+    </script>
+}
+<script id="template-mustache" type="x-tmpl-mustache">
+    <tr>
+        <th scope="row"><button data-id="{{Id}}" class="btn btn-default btn-sm btn-edit"><i class="fa fa-pencil"></i></button><button data-id="{{Id}}" class="btn btn-danger btn-sm btn-delete"><i class="fa fa-trash"></i></button></th>
+        <td>{{ProductName}}</td>
+        <td>{{CategoryName}}</td>
+        <td>{{Price}}</td>
+        <td>{{{Image}}}</td>
+        <td>{{CreatedDate}}</td>
+        <td>{{{Status}}}</td>
+    </tr>
+</script>
+
+@Html.Partial("_AddOrUpdateProductModal")
+

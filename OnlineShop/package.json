@@ -1,0 +1,20 @@
+{
+  "version": "1.0.0",
+  "name": "asp.net",
+  "private": true,
+  "devDependencies": {
+    "gentelella": "1.4.0",
+    "notifyjs": "",
+    "bootbox": "5.3.4",
+    "mustache": "3.2.0",
+    "twbs-pagination": "1.4.1",
+    "jquery-easyui": "1.5.21",
+    "ckeditor-5-build-classic-for-classic-use": "12.3.1",
+    "ckeditor5-build-classic": "1.0.0",
+    "jquery-treegrid": "0.3.0",
+    "bootstrap-datepicker": "1.9.0" 
+
+
+
+  }
+}

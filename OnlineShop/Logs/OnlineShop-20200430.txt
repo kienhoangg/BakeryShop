@@ -1,0 +1,6 @@
+2020-04-30T14:53:14.0333777+07:00  [INF] Now listening on: "https://localhost:5001" (d826f4b8)
+2020-04-30T14:53:14.0396273+07:00  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2020-04-30T14:53:14.0420900+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-04-30T14:53:14.0445905+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-04-30T14:53:14.0475787+07:00  [INF] Content root path: "D:\Bakery\CMS-master\OnlineShop" (b5d60022)
+2020-04-30T14:53:32.3650362+07:00 0HLVCRE4LL846:00000007 [INF] User logged in. (fdce0db4)

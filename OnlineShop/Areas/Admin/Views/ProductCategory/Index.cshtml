@@ -1,0 +1,43 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+@section styles{
+   @*// <link href="~/vendor/jquery-easyui/css/easyui.css" rel="stylesheet" />*@
+    <link href="~/lib/jquery-easyui/themes/bootstrap/easyui.css" rel="stylesheet" />
+    <link href="~/lib/jquery-easyui/themes/icon.css" rel="stylesheet" />
+}
+
+@section scripts {
+    <script src="~/lib/jquery-easyui/jquery.easyui.min.js"></script>
+    @*<script src="~/vendor/jquery-easyui/js/jquery.easyui.min.js"></script>*@
+    <script src="~/app/controller/productCategory/index.js"></script>
+    <script>
+        var productCategory = new productCategory();
+        productCategory.Initialize();
+    </script>
+}
+
+<div class="col-md-12 col-sm-12 col-xs-12">
+    <div class="x_panel">
+        <div class="x_title">
+            <h2>Product Categories</h2>
+            <div class="title_right">
+                <div class="col-md-2 col-sm-2 col-xs-12 form-group pull-right">
+                    <button class="btn btn-success" id="btnCreate" type="button">Create</button>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="x_content">
+            <ul id="treeCategory"></ul>
+            
+            <div id="contextMenu" class="easyui-menu" style="width:120px;">
+                <div id="btnEdit" data-options="iconCls:'icon-edit'">Sửa</div>
+                <div id="btnDelete" data-options="iconCls:'icon-remove'">Xoá</div>
+            </div>
+        </div>
+    </div>
+</div>
+@Html.Partial("_AddOrUpdateModal")
+

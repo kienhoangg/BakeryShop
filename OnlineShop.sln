@@ -1,0 +1,79 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineShop_Application", "OnlineShop_Application\OnlineShop_Application.csproj", "{63853337-46AA-4351-8D6D-512A0E09FF6B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineShop_Data", "OnlineShop_Data\OnlineShop_Data.csproj", "{117C467D-183E-4777-BE60-6454B7F8C68D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineShop_Data.EF", "OnlineShop_Data.EF\OnlineShop_Data.EF.csproj", "{6E561F4E-F62C-4365-B0CC-1B01ACB9763A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineShop_Infrastructure", "OnlineShop_Infrastructure\OnlineShop_Infrastructure.csproj", "{BA958D63-B918-44AC-9BB2-BD408514BEFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineShop_Utilities", "OnlineShop_Utilities\OnlineShop_Utilities.csproj", "{A37B9778-3D8A-4E13-BF74-B4625E787348}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineShop", "OnlineShop\OnlineShop.csproj", "{CFE7A838-CFE6-4C5B-9A82-1EA586543E8F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{63853337-46AA-4351-8D6D-512A0E09FF6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63853337-46AA-4351-8D6D-512A0E09FF6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63853337-46AA-4351-8D6D-512A0E09FF6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63853337-46AA-4351-8D6D-512A0E09FF6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{117C467D-183E-4777-BE60-6454B7F8C68D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{117C467D-183E-4777-BE60-6454B7F8C68D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{117C467D-183E-4777-BE60-6454B7F8C68D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{117C467D-183E-4777-BE60-6454B7F8C68D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E561F4E-F62C-4365-B0CC-1B01ACB9763A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E561F4E-F62C-4365-B0CC-1B01ACB9763A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E561F4E-F62C-4365-B0CC-1B01ACB9763A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E561F4E-F62C-4365-B0CC-1B01ACB9763A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA958D63-B918-44AC-9BB2-BD408514BEFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA958D63-B918-44AC-9BB2-BD408514BEFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA958D63-B918-44AC-9BB2-BD408514BEFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA958D63-B918-44AC-9BB2-BD408514BEFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A37B9778-3D8A-4E13-BF74-B4625E787348}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A37B9778-3D8A-4E13-BF74-B4625E787348}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A37B9778-3D8A-4E13-BF74-B4625E787348}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A37B9778-3D8A-4E13-BF74-B4625E787348}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFE7A838-CFE6-4C5B-9A82-1EA586543E8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFE7A838-CFE6-4C5B-9A82-1EA586543E8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFE7A838-CFE6-4C5B-9A82-1EA586543E8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFE7A838-CFE6-4C5B-9A82-1EA586543E8F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F401BB0B-FEFE-43C5-B5E4-789B8EB9498D}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://dev.azure.com/kienht12
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = OnlineShop_Application\\OnlineShop_Application.csproj
+		SccProjectName1 = OnlineShop_Application
+		SccLocalPath1 = OnlineShop_Application
+		SccProjectUniqueName2 = OnlineShop_Data.EF\\OnlineShop_Data.EF.csproj
+		SccProjectName2 = OnlineShop_Data.EF
+		SccLocalPath2 = OnlineShop_Data.EF
+		SccProjectUniqueName3 = OnlineShop_Data\\OnlineShop_Data.csproj
+		SccProjectName3 = OnlineShop_Data
+		SccLocalPath3 = OnlineShop_Data
+		SccProjectUniqueName4 = OnlineShop_Infrastructure\\OnlineShop_Infrastructure.csproj
+		SccProjectName4 = OnlineShop_Infrastructure
+		SccLocalPath4 = OnlineShop_Infrastructure
+		SccProjectUniqueName5 = OnlineShop_Utilities\\OnlineShop_Utilities.csproj
+		SccProjectName5 = OnlineShop_Utilities
+		SccLocalPath5 = OnlineShop_Utilities
+		SccProjectUniqueName6 = OnlineShop\\OnlineShop.csproj
+		SccProjectName6 = OnlineShop
+		SccLocalPath6 = OnlineShop
+	EndGlobalSection
+EndGlobal
